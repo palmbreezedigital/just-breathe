@@ -71,23 +71,47 @@ img { max-width: 100%; }
 .margin-tb { margin-top: 5%; margin-bottom: 5%; }
 .margin-lr { margin-left: 5%; margin-right: 5%; }
 
+/* Height Viewport */
+.tall-40 { min-height: 40vh;}
+.tall-50 { min-height: 50vh;}
+.tall-60 { min-height: 60vh;}
+.tall-70 { min-height: 70vh;}
+.tall-80 { min-height: 80vh;}
+
 /* Typography Styles */
 .text-left    { text-align: left; }
 .text-right   { text-align: right; }
 .text-center  { text-align: center; }
 
 body {
-  font-family: "Arial", sans-serif;  /* Add your font here */ 
+  font-family: 'Montserrat', sans-serif;  /* Add your font here */ 
 }
 
-h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   line-height: 1.1;
   margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+h2 { font-size: 3rem; }
+h3 { font-size: 2.5rem; }
+h4 { font-size: 2rem; }
+
+.big-text {
+  font-size: 4.5rem;
+  font-weight: 900;
 }
 
 p {
   line-height: 1.4; 
   margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 h2:last-child, 
@@ -101,11 +125,11 @@ p:last-child {
 
 /* Background */
 .bg-dark { 
-  background-color: rgb(60,60,65); 
+  background-color: #01202D; 
   color: white;
 }
 
-.bg-featured { background-color: lightblue; }
+.bg-featured { background-color: #015267; }
 .bg-light { background-color: rgb(245,245,245); }
 
 .bg-image {
@@ -115,6 +139,22 @@ p:last-child {
   background-repeat: no-repeat;
 }
 
+.img-gallery {
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  width: 31%;
+  padding-bottom: 25%;
+
+}
+
+.ocean { 
+  background-image: url('images/ocean-waves.jpg');
+  background-position: 30%, 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .boat { background-image: url('images/ocean-boat.jpg'); }
 .surfer { background-image: url('images/surfer.jpg'); }
 .sand { background-image: url('images/sand-ocean.jpg'); }
@@ -133,3 +173,56 @@ p:last-child {
 .bg-pos-b { background-position: bottom; }
 .bg-pos-l { background-position: left; }
 .bg-pos-r { background-position: right; }
+
+
+/* Pointer Arrow */
+
+.down-arrow {
+  text-decoration: none;
+  color: inherit;
+  font-size: 3.2rem;
+}
+
+.down-arrow:hover {
+  color: gray;
+}
+
+/* Button */
+.button {
+  display: inline-block;
+  border: 1px solid;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.8rem 2rem; /* top + bottom then left + right */
+  margin-top: 1rem;
+}
+
+.button:hover {
+  color: gray;
+  text-transform: lowercase;
+}
+
+/* Banner Section */
+span {
+  border-bottom: 1px solid white;
+}
+
+/* Footer */
+footer {
+  padding: 5% 10%;
+}
+
+footer nav a{
+  padding: 1rem;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+footer nav a:hover {
+  color: gray;
+  text-transform: lowercase;
+}
+
